@@ -1,0 +1,12 @@
+{
+  "MONGO_DB": "mongodb://localhost/ng2-skeleton",
+  "MONGO_DB_DEBUG": true,
+  "PORT": 3001,
+  "SECRET": "sYG7h#dF5&F87KjnFt8DSe34FvLPd",
+  "FACEBOOK_APP_ID": "1108844369162872",
+  "FACEBOOK_APP_SECRET": "2348cc3fbcc6cab9119ef7b95ae4cd09",
+  "FACEBOOK_CALLBACK": "http://localhost:3001/api/sessions/facebook/callback",
+  "GOOGLE_CLIENT_ID": "846359332152-cc2chc1kbuk73ped4ijmitl4it4hj56e.apps.googleusercontent.com",
+  "GOOGLE_CLIENT_SECRET": "7tdDRte-_Xad_2wnUEULQySW",
+  "GOOGLE_CALLBACK": "http://localhost:3001/api/sessions/google/callback"
+}

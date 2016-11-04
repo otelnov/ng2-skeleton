@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-6">
+    <h2 class="sub-header">User list</h2>
+  </div>
+</div>
+<table *ngIf="users.length > 0" class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Email</th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; let i = index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{user.email}}</td>
+      <td>{{user.name}}</td>
+      <td>
+        <div (click)="changeStatus(user)" class="toggle-button" [ngClass]="{'toggle-button-selected': user.isActive}">
+          <button></button>
+        </div>
+      </td>
+      <td><button (click)="deleteUser(user, i)" class="btn btn-xs btn-danger">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

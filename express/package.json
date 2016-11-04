@@ -1,0 +1,32 @@
+{
+  "name": "ng2-skeleton-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js --ignore 'src/*'"
+  },
+  "author": "Oleksandr Telnov <otelnov@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "2.3.0",
+    "body-parser": "1.15.2",
+    "compression": "1.6.2",
+    "config": "1.21.0",
+    "cors": "2.8.1",
+    "errorhandler": "1.4.3",
+    "express": "4.14.0",
+    "express-jwt": "5.0.0",
+    "jsonwebtoken": "7.1.9",
+    "lodash": "4.16.1",
+    "mongoose": "4.6.1",
+    "morgan": "1.7.0",
+    "passport": "0.3.2",
+    "passport-facebook": "2.1.1",
+    "passport-google-oauth": "1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.10.2"
+  }
+}

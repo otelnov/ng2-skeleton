@@ -1,0 +1,16 @@
+<div class="col-sm-3 col-md-2 sidebar">
+  <ul class="nav nav-sidebar">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="/">Home</a>
+    </li>
+    <li *ngIf="user.isAdmin" routerLinkActive="active">
+      <a routerLink="/admin">Super admin</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/user">User page</a>
+    </li>
+  </ul>
+  <ul class="nav nav-sidebar">
+    <li><a href="#">Some page</a></li>
+  </ul>
+</div>
